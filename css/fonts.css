@@ -1,22 +1,25 @@
 
 /* Підключення шрифту Raleway - Black */
-@font-face {
+/* @font-face {
     font-family: 'Raleway';
     font-weight: 900;
     src: url('../fonts/Raleway/static/Raleway-Black.ttf') format('truetype');
-}
+} */
 
 /* Підключення шрифту Raleway - BlackItalic */
-@font-face {
+/* @font-face {
     font-family: 'Raleway';
     font-weight: 900;
     font-style: italic;
     src: url('../fonts/Raleway/static/Raleway-BlackItalic.ttf') format('truetype');
-}
+} */
 
 /* Підключення шрифту Raleway - Bold */
-@font-face {
+/* @font-face {
     font-family: 'Raleway';
     font-weight: bold;
     src: url('../fonts/Raleway/static/Raleway-Bold.ttf') format('truetype');
-}
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
