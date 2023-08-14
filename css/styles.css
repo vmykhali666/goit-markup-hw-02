@@ -69,19 +69,33 @@ body {
 
 .icon-logo_text {
     font-family: var(--additional-font);
+    color: var(--accent-color);
     font-size: 18px;
     letter-spacing: .54px;
     text-transform: uppercase;
     font-weight: 800;
+    line-height: 1.17;
+}
+
+.footer-container .logo-accent {
+    color: var(--white-color);
+}
+
+.link {
+    text-decoration: none;
 }
 
 .logo-accent {
-    color: var(--accent-color);
+    color: var(--main-font-color);
     font-weight: inherit;
 }
 
 .header-container a:hover {
     color: var(--accent-color);
+}
+
+.logo-accent:hover {
+    color:var(--accent-color);
 }
 
 .contant-container {
@@ -198,6 +212,7 @@ body {
     border-radius: 4px;
     background-color: var(--accent-color);
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 .feature-section {
