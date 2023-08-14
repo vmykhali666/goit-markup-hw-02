@@ -8,6 +8,7 @@
     --accent-color: #4D5AE5;
     --cloud-color: #F4F4FD;
     --white-color: #FFFFFF;
+    --link-header-color: #404bbf;
 }
 
 .visually-hidden {
@@ -91,7 +92,7 @@ body {
 }
 
 .header-container a:hover {
-    color: var(--accent-color);
+    color: var(--link-header-color);
 }
 
 .logo-accent:hover {
@@ -161,6 +162,11 @@ body {
 .list {
     list-style: none;
 }
+
+.list > li:first-child {
+    letter-spacing: 0.02em
+}
+
 
 .cart-description {
     color: var(--light-font-color);
