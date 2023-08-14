@@ -26,6 +26,8 @@
 body {
     font-family: var(--main-font);
     line-height: 1.5;
+    color: var(--light-font-color);
+    background-color: var(--white-color);
 }
 
 .header-container {
