@@ -158,6 +158,10 @@ body {
     font-weight: 500;
 }
 
+.list {
+    list-style: none;
+}
+
 .cart-description {
     color: var(--light-font-color);
     font-size: 16px;
