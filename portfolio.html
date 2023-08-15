@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles-reset.css" />
-    <link rel="stylesheet" href="./css/fonts.css" />
+    <!-- <link rel="stylesheet" href="./css/fonts.css" /> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
     <title class="title-text">Portfolio</title>
   </head>
@@ -15,8 +17,8 @@
           >Web<span class="logo-accent">Studio</span></a
         >
         <ul class="header-navigation_ul list">
-          <li class="link header-navigation_li">
-            <a href="./index.html" class="header-navigation_a">Studio</a>
+          <li class="header-navigation_li">
+            <a href="./index.html" class="header-navigation_a link">Studio</a>
           </li>
           <li class="header-navigation_li">
             <a href="" class="header-navigation_a">Portfolio</a>
@@ -28,15 +30,15 @@
       </nav>
       <address class="header-adrress">
         <ul class="header-address_ul list">
-          <li class="link header-address_li">
+          <li class="header-address_li">
             <a
               href="mailto:info@devstudio.com"
-              class="header-address_email-link"
+              class="header-address_email-link link"
               >info@devstudio.com</a
             >
           </li>
-          <li class="link header-address_li">
-            <a href="tel:+110001111111" class="header-address_phone-link"
+          <li class="header-address_li">
+            <a href="tel:+110001111111" class="header-address_phone-link link"
               >+11 (000) 111-11-11</a
             >
           </li>
@@ -44,88 +46,101 @@
       </address>
     </header>
     <main class="contant-container">
-      <ul class="filter-buttons">
-        <li class="button-wrapper">
-          <input type="button" value="all" class="filter-button" />
-        </li>
-        <li class="button-wrapper">
-          <input type="button" value="web site" class="filter-button" />
-        </li>
-        <li class="button-wrapper">
-          <input type="button" value="app" class="filter-button" />
-        </li>
-        <li class="button-wrapper">
-          <input type="button" value="design" class="filter-button" />
-        </li>
-        <li class="button-wrapper">
-          <input type="button" value="marketing" class="filter-button" />
-        </li>
-      </ul>
-      <ul class="cart-list">
-        <li class="cart-element">
-          <img src="./images/portfolio/img-8.jpg" alt="" class="cart-image" />
-          <div class="cart-text_container">
-            <p class="cart-title">Banking App Interface Concept</p>
-            <p class="cart-description">App</p>
-          </div>
-        </li>
-        <li class="cart-element">
-          <img src="./images/portfolio/img-7.jpg" alt="" class="cart-image" />
-          <div class="cart-text_container">
-            <p class="cart-title">Cashless Payment</p>
-            <p class="cart-description">Marketing</p>
-          </div>
-        </li>
-        <li class="cart-element">
-          <img src="./images/portfolio/img-6.jpg" alt="" class="cart-image" />
-          <div class="cart-text_container">
-            <p class="cart-title">Meditation App</p>
-            <p class="cart-description">App</p>
-          </div>
-        </li>
-        <li class="cart-element">
-          <img src="./images/portfolio/img-5.jpg" alt="" class="cart-image" />
-          <div class="cart-text_container">
-            <p class="cart-title">Taxi Service</p>
-            <p class="cart-description">Marketing</p>
-          </div>
-        </li>
-        <li class="cart-element">
-          <img src="./images/portfolio/img-4.jpg" alt="" class="cart-image" />
-          <div class="cart-text_container">
-            <p class="cart-title">Screen Illustrations</p>
-            <p class="cart-description">Design</p>
-          </div>
-        </li>
-        <li class="cart-element">
-          <img src="./images/portfolio/img-3.jpg" alt="" class="cart-image" />
-          <div class="cart-text_container">
-            <p class="cart-title">Online Courses</p>
-            <p class="cart-description">Marketing</p>
-          </div>
-        </li>
-        <li class="cart-element">
-          <img src="./images/portfolio/img-2.jpg" alt="" class="cart-image" />
-          <div class="cart-text_container">
-            <p class="cart-title">Instagram Stories Concept</p>
-            <p class="cart-description">Design</p>
-          </div>
-        </li>
-        <li class="cart-element">
-          <img src="./images/portfolio/img-1.jpg" alt="" class="cart-image" />
-          <div class="cart-text_container">
-            <p class="cart-title">Organic Food</p>
-            <p class="cart-description">Web Site</p>
-          </div>
-        </li>
-        <li class="cart-element">
-          <img src="./images/portfolio/img.jpg" alt="" class="cart-image:s" />
-          <div class="cart-text_container">
-            <p class="cart-title">Fresh Coffee</p>
-            <p class="cart-description">Web Site</p>
-          </div>
-        </li>
-      </ul>
+      <section class="buttons-container_section">
+        <h2 class="buttons-heading .visually-hidden">Buttons</h2>
+        <ul class="filter-buttons">
+          <li class="button-wrapper">
+            <input type="button" value="all" class="filter-button" />
+          </li>
+          <li class="button-wrapper">
+            <input type="button" value="web site" class="filter-button" />
+          </li>
+          <li class="button-wrapper">
+            <input type="button" value="app" class="filter-button" />
+          </li>
+          <li class="button-wrapper">
+            <input type="button" value="design" class="filter-button" />
+          </li>
+          <li class="button-wrapper">
+            <input type="button" value="marketing" class="filter-button" />
+          </li>
+        </ul>
+      </section>
+      <section class="image-container-row">
+        <ul class="cart-list">
+          <li class="cart-element">
+            <img src="./images/portfolio/img-8.jpg" alt="" class="cart-image" />
+            <div class="cart-text_container">
+              <p class="cart-title">Banking App Interface Concept</p>
+              <p class="cart-description">App</p>
+            </div>
+          </li>
+          <li class="cart-element">
+            <img src="./images/portfolio/img-7.jpg" alt="" class="cart-image" />
+            <div class="cart-text_container">
+              <p class="cart-title">Cashless Payment</p>
+              <p class="cart-description">Marketing</p>
+            </div>
+          </li>
+          <li class="cart-element">
+            <img src="./images/portfolio/img-6.jpg" alt="" class="cart-image" />
+            <div class="cart-text_container">
+              <p class="cart-title">Meditation App</p>
+              <p class="cart-description">App</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="image-container-row">
+        <ul class="cart-list">
+          <li class="cart-element">
+            <img src="./images/portfolio/img-5.jpg" alt="" class="cart-image" />
+            <div class="cart-text_container">
+              <p class="cart-title">Taxi Service</p>
+              <p class="cart-description">Marketing</p>
+            </div>
+          </li>
+          <li class="cart-element">
+            <img src="./images/portfolio/img-4.jpg" alt="" class="cart-image" />
+            <div class="cart-text_container">
+              <p class="cart-title">Screen Illustrations</p>
+              <p class="cart-description">Design</p>
+            </div>
+          </li>
+          <li class="cart-element">
+            <img src="./images/portfolio/img-3.jpg" alt="" class="cart-image" />
+            <div class="cart-text_container">
+              <p class="cart-title">Online Courses</p>
+              <p class="cart-description">Marketing</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="image-container-row">
+        <ul class="cart-list">
+          <li class="cart-element">
+            <img src="./images/portfolio/img-2.jpg" alt="" class="cart-image" />
+            <div class="cart-text_container">
+              <p class="cart-title">Instagram Stories Concept</p>
+              <p class="cart-description">Design</p>
+            </div>
+          </li>
+          <li class="cart-element">
+            <img src="./images/portfolio/img-1.jpg" alt="" class="cart-image" />
+            <div class="cart-text_container">
+              <p class="cart-title">Organic Food</p>
+              <p class="cart-description">Web Site</p>
+            </div>
+          </li>
+          <li class="cart-element">
+            <img src="./images/portfolio/img.jpg" alt="" class="cart-image:s" />
+            <div class="cart-text_container">
+              <p class="cart-title">Fresh Coffee</p>
+              <p class="cart-description">Web Site</p>
+            </div>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer class="footer-container">
       <a href="./index.html" class="icon-logo_text link"
