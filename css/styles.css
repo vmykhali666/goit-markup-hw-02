@@ -91,7 +91,7 @@ body {
     font-weight: inherit;
 }
 
-.header-container a:hover {
+.header-container a:hover,.header-container a:focus {
     color: var(--link-header-color);
 }
 
