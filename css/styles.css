@@ -203,13 +203,14 @@ body {
     gap: 48px;
 }
 
-.cover-section_h1 {
+.cover-section_h {
     font-size: 56px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 1.07;
     letter-spacing: 1.12px;
     text-align: center;
     max-width: 590px;
+    color: var(--white-color);
 }
 
 .cover-section_button {
