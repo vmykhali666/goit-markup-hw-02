@@ -79,7 +79,7 @@ body {
 }
 
 .footer-container .logo-accent {
-    color: var(--white-color);
+    color: var(--cloud-color);
 }
 
 .link {
@@ -189,6 +189,7 @@ body {
     max-width: 264px;
     font-size: 16px;
     font-weight: 400;
+    letter-spacing: 0.02em;
 }
 
 /* index page css start */
@@ -243,17 +244,20 @@ body {
     padding: 0 var(--container-side-padding);
 }
 
-.content-text_h3 {
+.content-text_h {
     margin-bottom: 8px;
     color: var(--main-font-color);
     font-size: 20px;
     font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 0.02em;
 }
 
 .content-text_p {
     color: var(--light-font-color);
     font-size: 16px;
     font-weight: 400;
+    letter-spacing: 0.02em;
 }
 
 .doing-section {
@@ -261,14 +265,16 @@ body {
     padding-bottom: 120px;
 }
 
-.content-photo_h2,
-.content-team_h2 {
+.content-photo_h,
+.content-team_h {
     width: fit-content;
     font-size: 36px;
     color: var(--main-font-color);
     font-weight: 700;
     text-transform: capitalize;
-    letter-spacing: .72px;
+    line-height: 1.11em;
+    text-align: center;
+    letter-spacing: 0.02em;
     margin: 0 auto;
     margin-bottom: 72px;
 }
@@ -315,6 +321,7 @@ body {
     width: fit-content;
     font-size: 20px;
     color: var(--main-font-color);
+    line-height: 1.2em;
     font-weight: 500;
     letter-spacing: 0.40px;
 }
