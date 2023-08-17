@@ -1,345 +1,474 @@
 :root {
-    --border-color: #E7E9FC;
-    --container-side-padding: 9.75em;
-    --main-font : "Roboto", sans-serif;
-    --additional-font: "Raleway", sans-serif;
-    --main-font-color: #2E2F42;
-    --light-font-color: #434455;
-    --accent-color: #4D5AE5;
-    --cloud-color: #F4F4FD;
-    --white-color: #FFFFFF;
-    --link-header-color: #404BBF;
+  --border-color: #e7e9fc;
+  --container-side-padding: 9.75em;
+  --main-font: 'Roboto', sans-serif;
+  --additional-font: 'Raleway', sans-serif;
+  --main-font-color: #2e2f42;
+  --light-font-color: #434455;
+  --accent-color: #4d5ae5;
+  --cloud-color: #f4f4fd;
+  --white-color: #ffffff;
+  --link-header-color: #404bbf;
+}
+
+/* Базовий сброс стилів */
+
+/* Загальні сброси */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ul,
+ol,
+li,
+table,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* Загальні налаштування */
+body {
+  line-height: 1;
+  font-family: Arial, sans-serif;
+}
+
+/* Зовнішній вид списків */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Посилання без стилів */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Зображення без обрамлення */
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Таблиці без стилів */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Текстові елементи необхідно перезаписати за потреби */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Додаткові сброси, за потреби */
+/* ... */
+address {
+  display: initial;
+  font-style: normal;
+}
+
+/* Сброс стилів для зображень */
+img {
+  display: block;
+  /* Змінюємо властивість display на inline-block */
+  max-width: 100%;
+  /* Забезпечуємо, щоб зображення не виходили за межі контейнера */
+  height: auto;
+  /* Автоматично розраховуємо висоту для збереження співвідношення сторін */
+  border: 0;
+  /* Забираємо границю */
+  margin: 0;
+  /* Знімаємо зовнішні відступи */
+  padding: 0;
+  /* Знімаємо внутрішні відступи */
+}
+
+/* Сброс стилів для input */
+input {
+  padding: 5px;
+  /* Додаткові відступи всередині input */
+  border: 1px solid #ccc;
+  /* Границя */
+  border-radius: 4px;
+  /* Закруглені кути */
+  font-size: 14px;
+  /* Розмір шрифту */
+  outline: none;
+  /* Забираємо контур при активізації */
+  box-shadow: none;
+  /* Забираємо тінь */
+  background-color: white;
+  /* Колір фону */
+  color: #333;
+  /* Колір тексту */
+  margin: 0;
+  /* Знімаємо зовнішні відступи */
+}
+
+/* Відключення каретки на вказаних елементах */
+input[type='button'],
+textarea,
+button,
+a,
+img {
+  caret-color: transparent;
+  /* Встановлюємо прозорий колір для каретки */
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 body {
-    font-family: var(--main-font);
-    line-height: 1.5;
-    color: var(--light-font-color);
-    background-color: var(--white-color);
+  font-family: var(--main-font);
+  line-height: 1.5;
+  color: var(--light-font-color);
+  background-color: var(--white-color);
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    height: 76px;
-    align-items: center;
-    border-bottom: 1px solid;
-    border-color: var(--border-color);
-    padding: 0 var(--container-side-padding);
+  display: flex;
+  justify-content: space-between;
+  height: 76px;
+  align-items: center;
+  border-bottom: 1px solid;
+  border-color: var(--border-color);
+  padding: 0 var(--container-side-padding);
 }
 
 .header-container ul {
-    gap: 40px;
+  gap: 40px;
 }
 
 .header-navigation {
-    display: flex;
-    gap: 76px;
+  display: flex;
+  gap: 76px;
 }
 
 .header-navigation_ul {
-    display: flex;
-    color: var(--main-font-color);
+  display: flex;
+  color: var(--main-font-color);
 }
 
 .header-navigation_li > a {
-    font-size: 16px;
-    text-transform: capitalize;
-    font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 500;
 }
 
 .header-address_ul {
-    display: flex;
-    font-size: 16px;
-    text-transform: lowercase;
-    font-weight: 400;
+  display: flex;
+  font-size: 16px;
+  text-transform: lowercase;
+  font-weight: 400;
 }
 
 .icon-logo_text {
-    font-family: var(--additional-font);
-    color: var(--link-header-color);
-    font-size: 18px;
-    letter-spacing: .54px;
-    text-transform: uppercase;
-    font-weight: 800;
-    line-height: 1.17;
+  font-family: var(--additional-font);
+  color: var(--link-header-color);
+  font-size: 18px;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1.17;
 }
 
 .footer-container .logo-accent {
-    color: var(--cloud-color);
+  color: var(--cloud-color);
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .logo-accent {
-    color: var(--main-font-color);
-    font-weight: inherit;
+  color: var(--main-font-color);
+  font-weight: inherit;
 }
 
-.header-container a:hover,.header-container a:focus {
-    color: var(--link-header-color);
+.header-container a:hover,
+.header-container a:focus {
+  color: var(--link-header-color);
 }
 
 .logo-accent:hover {
-    color:var(--link-header-color);
+  color: var(--link-header-color);
 }
 
 .contant-container {
-    margin-top: 96px;
-    padding: 0 var(--container-side-padding);
-    margin-bottom: 120px;
+  margin-top: 96px;
+  padding: 0 var(--container-side-padding);
+  margin-bottom: 120px;
 }
 
 .filter-buttons {
-    display: flex;
-    gap: 24px;
-    width: fit-content;
-    margin: 0 auto;
+  display: flex;
+  gap: 24px;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .filter-button {
-    padding: 12px 24px;
-    color: var(--accent-color);
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    line-height: 1.5;
-    border-radius: 4px;
-    background-color: var(--cloud-color);
-    border: 0.5px solid var(--border-color);
-    text-transform: capitalize;
-    cursor: pointer;
+  padding: 12px 24px;
+  color: var(--accent-color);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  border-radius: 4px;
+  background-color: var(--cloud-color);
+  border: 0.5px solid var(--border-color);
+  text-transform: capitalize;
+  cursor: pointer;
 }
 
 .filter-button:hover,
 .filter-button:focus {
-    cursor: pointer;
-    background-color: var(--accent-color);
-    color: var(--white-color);
-    border-color: var(--accent-color);
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  border-color: var(--accent-color);
 }
 
 .cart-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 48px 24px;
-    margin-top: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px 24px;
+  margin-top: 72px;
 }
 
 .cart-element {
-    padding-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .cart-image {
-    width: 360px;
-    height: 300px;
+  width: 360px;
+  height: 300px;
 }
 
 .cart-title {
-    padding-left: 16px;
-    margin-top: 32px;
-    margin-bottom: 8px;
-    color: var(--main-font-color);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+  padding-left: 16px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: var(--main-font-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 
 .list > li:first-child {
-    letter-spacing: 0.02em
+  letter-spacing: 0.02em;
 }
 
-
 .cart-description {
-    padding-left: 16px;
-    color: var(--light-font-color);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+  padding-left: 16px;
+  color: var(--light-font-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .footer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 18px;
-    height: 312px;
-    background-color: var(--main-font-color);
-    padding: 0 var(--container-side-padding);
-    color: var(--cloud-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  height: 312px;
+  background-color: var(--main-font-color);
+  padding: 0 var(--container-side-padding);
+  color: var(--cloud-color);
 }
 
 .footer-content_text {
-    max-width: 264px;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.02em;
+  max-width: 264px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 
 /* index page css start */
 .start-section {
-    background-color: var(--main-font-color);
-    color: var(--cloud-color);
-    height: calc(100vh - 76px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 48px;
+  background-color: var(--main-font-color);
+  color: var(--cloud-color);
+  height: calc(100vh - 76px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
 }
 
 .cover-section_h {
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07;
-    letter-spacing: 1.12px;
-    text-align: center;
-    max-width: 590px;
-    color: var(--white-color);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+  text-align: center;
+  max-width: 590px;
+  color: var(--white-color);
 }
 
 .cover-section_button {
-    padding: 16px 32px;
-    color: var(--white-color);
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    line-height: 1.5;
-    border: none;
-    border-radius: 4px;
-    background-color: var(--accent-color);
-    text-transform: capitalize;
-    cursor: pointer;
+  padding: 16px 32px;
+  color: var(--white-color);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  text-transform: capitalize;
+  cursor: pointer;
 }
 
 .cover-section_button:hover,
 .cover-section_button:focus {
-    background-color: var(--link-header-color);
+  background-color: var(--link-header-color);
 }
 
 .feature-section {
-    margin: 120px 0;
+  margin: 120px 0;
 }
 
 .content-text-container {
-    display: flex;
-    gap: 24px;
-    padding: 0 var(--container-side-padding);
+  display: flex;
+  gap: 24px;
+  padding: 0 var(--container-side-padding);
 }
 
 .content-text_h {
-    margin-bottom: 8px;
-    color: var(--main-font-color);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2em;
-    letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  color: var(--main-font-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
 }
 
 .content-text_p {
-    color: var(--light-font-color);
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.02em;
+  color: var(--light-font-color);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 
 .doing-section {
-    padding: 0 var(--container-side-padding);
-    padding-bottom: 120px;
+  padding: 0 var(--container-side-padding);
+  padding-bottom: 120px;
 }
 
 .content-photo_h,
 .content-team_h {
-    width: fit-content;
-    font-size: 36px;
-    color: var(--main-font-color);
-    font-weight: 700;
-    text-transform: capitalize;
-    line-height: 1.11em;
-    text-align: center;
-    letter-spacing: 0.02em;
-    margin: 0 auto;
-    margin-bottom: 72px;
+  width: fit-content;
+  font-size: 36px;
+  color: var(--main-font-color);
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 1.11em;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin: 0 auto;
+  margin-bottom: 72px;
 }
 
 .content-photo_img {
-    width: 360px;
-    height: 300px;
+  width: 360px;
+  height: 300px;
 }
 
 .content-photos {
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .team-section {
-    padding: 120px var(--container-side-padding);
-    background-color: var(--cloud-color);
+  padding: 120px var(--container-side-padding);
+  background-color: var(--cloud-color);
 }
 
 .content-team-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px;
-    margin-top: 72px;
-    padding-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 72px;
+  padding-bottom: 32px;
 }
 
 .team-persone_card {
-    overflow: hidden;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    padding-bottom: 32px;
-    background-color: var(--white-color);
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08);
+  overflow: hidden;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding-bottom: 32px;
+  background-color: var(--white-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-persone_img {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .team-persone_name {
-    margin: 8px auto;
-    width: fit-content;
-    font-size: 20px;
-    color: var(--main-font-color);
-    line-height: 1.2em;
-    font-weight: 500;
-    letter-spacing: 0.40px;
+  margin: 8px auto;
+  width: fit-content;
+  font-size: 20px;
+  color: var(--main-font-color);
+  line-height: 1.2em;
+  font-weight: 500;
+  letter-spacing: 0.4px;
 }
 
 .team-persone_position {
-    color: var(--light-font-color);
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.32px;
-    margin: 0 auto;
-    width: fit-content;
+  color: var(--light-font-color);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+  margin: 0 auto;
+  width: fit-content;
 }
