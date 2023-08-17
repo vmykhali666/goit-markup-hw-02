@@ -35,7 +35,7 @@ tr,
 th,
 td {
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
   border: 0;
   font-size: 100%;
   font-weight: normal;
@@ -65,7 +65,7 @@ a {
 img {
   border: none;
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
 }
 
 /* Таблиці без стилів */
@@ -88,29 +88,29 @@ h6 {
 /* Додаткові сброси, за потреби */
 /* ... */
 address {
-  display: initial;
+  /* display: initial; */
   font-style: normal;
 }
 
 /* Сброс стилів для зображень */
 img {
-  display: block;
+  /* display: block; */
   /* Змінюємо властивість display на inline-block */
   max-width: 100%;
   /* Забезпечуємо, щоб зображення не виходили за межі контейнера */
-  height: auto;
+  /* height: auto; */
   /* Автоматично розраховуємо висоту для збереження співвідношення сторін */
   border: 0;
   /* Забираємо границю */
   margin: 0;
   /* Знімаємо зовнішні відступи */
-  padding: 0;
+  /* padding: 0; */
   /* Знімаємо внутрішні відступи */
 }
 
 /* Сброс стилів для input */
 input {
-  padding: 5px;
+  /* padding: 5px; */
   /* Додаткові відступи всередині input */
   border: 1px solid #ccc;
   /* Границя */
@@ -120,7 +120,7 @@ input {
   /* Розмір шрифту */
   outline: none;
   /* Забираємо контур при активізації */
-  box-shadow: none;
+  /* box-shadow: none; */
   /* Забираємо тінь */
   background-color: white;
   /* Колір фону */
@@ -141,12 +141,12 @@ img {
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+  /* position: absolute; */
+  /* width: 1px; */
+  /* height: 1px;
+  margin: -1px; */
+  /* border: 0; */
+  /* padding: 0; */
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -161,26 +161,26 @@ body {
 }
 
 .header-container {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
-  height: 76px;
-  align-items: center;
-  border-bottom: 1px solid;
+  /* height: 76px; */
+  /* align-items: center; */
+  /* border-bottom: 1px solid; */
   border-color: var(--border-color);
-  padding: 0 var(--container-side-padding);
+  /* padding: 0 var(--container-side-padding); */
 }
 
 .header-container ul {
-  gap: 40px;
+  /* gap: 40px; */
 }
 
 .header-navigation {
-  display: flex;
-  gap: 76px;
+  /* display: flex; */
+  /* gap: 76px; */
 }
 
 .header-navigation_ul {
-  display: flex;
+  /* display: flex; */
   color: var(--main-font-color);
 }
 
@@ -191,7 +191,7 @@ body {
 }
 
 .header-address_ul {
-  display: flex;
+  /* display: flex; */
   font-size: 16px;
   text-transform: lowercase;
   font-weight: 400;
@@ -231,19 +231,20 @@ body {
 
 .contant-container {
   margin-top: 96px;
-  padding: 0 var(--container-side-padding);
+  /* padding: 0 var(--container-side-padding); */
   margin-bottom: 120px;
 }
 
 .filter-buttons {
-  display: flex;
-  gap: 24px;
-  width: fit-content;
+  /* display: flex; */
+  justify-content: center;
+  /* gap: 24px; */
+  /* width: fit-content; */
   margin: 0 auto;
 }
 
 .filter-button {
-  padding: 12px 24px;
+  /* padding: 12px 24px; */
   color: var(--accent-color);
   font-family: inherit;
   font-size: 16px;
@@ -266,24 +267,24 @@ body {
 }
 
 .cart-list {
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
   justify-content: center;
-  gap: 48px 24px;
+  /* gap: 48px 24px; */
   margin-top: 72px;
 }
 
 .cart-element {
-  padding-bottom: 32px;
+  /* padding-bottom: 32px; */
 }
 
 .cart-image {
-  width: 360px;
-  height: 300px;
+  /* width: 360px;
+  height: 300px; */
 }
 
 .cart-title {
-  padding-left: 16px;
+  /* padding-left: 16px; */
   margin-top: 32px;
   margin-bottom: 8px;
   color: var(--main-font-color);
@@ -302,7 +303,7 @@ body {
 }
 
 .cart-description {
-  padding-left: 16px;
+  /* padding-left: 16px; */
   color: var(--light-font-color);
   font-size: 16px;
   font-weight: 400;
@@ -311,13 +312,13 @@ body {
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   justify-content: center;
-  gap: 18px;
-  height: 312px;
+  /* gap: 18px; */
+  /* height: 312px; */
   background-color: var(--main-font-color);
-  padding: 0 var(--container-side-padding);
+  /* padding: 0 var(--container-side-padding); */
   color: var(--cloud-color);
 }
 
@@ -332,12 +333,12 @@ body {
 .start-section {
   background-color: var(--main-font-color);
   color: var(--cloud-color);
-  height: calc(100vh - 76px);
-  display: flex;
-  flex-direction: column;
+  /* height: calc(100vh - 76px); */
+  /* display: flex; */
+  /* flex-direction: column; */
   justify-content: center;
-  align-items: center;
-  gap: 48px;
+  /* align-items: center; */
+  /* gap: 48px; */
 }
 
 .cover-section_h {
@@ -351,7 +352,7 @@ body {
 }
 
 .cover-section_button {
-  padding: 16px 32px;
+  /* padding: 16px 32px; */
   color: var(--white-color);
   font-family: inherit;
   font-size: 16px;
@@ -375,9 +376,9 @@ body {
 }
 
 .content-text-container {
-  display: flex;
-  gap: 24px;
-  padding: 0 var(--container-side-padding);
+  /* display: flex; */
+  /* gap: 24px; */
+  /* padding: 0 var(--container-side-padding); */
 }
 
 .content-text_h {
@@ -397,8 +398,8 @@ body {
 }
 
 .doing-section {
-  padding: 0 var(--container-side-padding);
-  padding-bottom: 120px;
+  /* padding: 0 var(--container-side-padding); */
+  /* padding-bottom: 120px; */
 }
 
 .content-photo_h,
@@ -416,38 +417,38 @@ body {
 }
 
 .content-photo_img {
-  width: 360px;
-  height: 300px;
+  /* width: 360px;
+  height: 300px; */
 }
 
 .content-photos {
-  display: flex;
-  gap: 24px;
+  /* display: flex; */
+  /* gap: 24px; */
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .team-section {
-  padding: 120px var(--container-side-padding);
+  /* padding: 120px var(--container-side-padding); */
   background-color: var(--cloud-color);
 }
 
 .content-team-container {
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  /* gap: 24px; */
   margin-top: 72px;
-  padding-bottom: 32px;
+  /* padding-bottom: 32px; */
 }
 
 .team-persone_card {
   overflow: hidden;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  padding-bottom: 32px;
+  /* border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px; */
+  /* padding-bottom: 32px; */
   background-color: var(--white-color);
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08);
+  /* box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08); */
 }
 
 .team-persone_img {
