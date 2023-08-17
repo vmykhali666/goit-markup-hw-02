@@ -70,7 +70,7 @@ body {
 
 .icon-logo_text {
     font-family: var(--additional-font);
-    color: var(--accent-color);
+    color: var(--link-header-color);
     font-size: 18px;
     letter-spacing: .54px;
     text-transform: uppercase;
@@ -96,7 +96,7 @@ body {
 }
 
 .logo-accent:hover {
-    color:var(--accent-color);
+    color:var(--link-header-color);
 }
 
 .contant-container {
@@ -294,6 +294,8 @@ body {
 .content-photos {
     display: flex;
     gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .team-section {
