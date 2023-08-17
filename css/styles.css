@@ -1,6 +1,5 @@
 :root {
   --border-color: #e7e9fc;
-  --container-side-padding: 9.75em;
   --main-font: 'Roboto', sans-serif;
   --additional-font: 'Raleway', sans-serif;
   --main-font-color: #2e2f42;
@@ -101,7 +100,6 @@ body {
   font-weight: 500;
   letter-spacing: 0.04em;
   line-height: 1.5;
-  border-radius: 4px;
   background-color: var(--cloud-color);
   border: 0.5px solid var(--border-color);
   text-transform: capitalize;
@@ -159,7 +157,6 @@ body {
 }
 
 .footer-content_text {
-  max-width: 264px;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.02em;
@@ -176,7 +173,6 @@ body {
   line-height: 1.07;
   letter-spacing: 1.12px;
   text-align: center;
-  max-width: 590px;
   color: var(--white-color);
 }
 
@@ -188,7 +184,6 @@ body {
   letter-spacing: 0.04em;
   line-height: 1.5;
   border: none;
-  border-radius: 4px;
   background-color: var(--accent-color);
   text-transform: capitalize;
   cursor: pointer;
@@ -227,7 +222,6 @@ body {
 
 .content-photo_h,
 .content-team_h {
-  width: fit-content;
   font-size: 36px;
   color: var(--main-font-color);
   font-weight: 700;
@@ -268,7 +262,6 @@ body {
 
 .team-persone_name {
   margin: 8px auto;
-  width: fit-content;
   font-size: 20px;
   color: var(--main-font-color);
   line-height: 1.2em;
@@ -282,5 +275,4 @@ body {
   font-weight: 400;
   letter-spacing: 0.32px;
   margin: 0 auto;
-  width: fit-content;
 }
