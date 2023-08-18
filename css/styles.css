@@ -93,7 +93,7 @@ address {
 }
 
 .filter-button {
-  color: var(--accent-color);
+  color: var(--main-font-color);
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -103,6 +103,10 @@ address {
   border: 0.5px solid var(--border-color);
   text-transform: capitalize;
   cursor: pointer;
+}
+
+.header-address_link {
+    color: var(--light-font-color);
 }
 
 .filter-button:hover,
