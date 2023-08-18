@@ -39,10 +39,15 @@ body {
   color: var(--main-font-color);
 }
 
+address {
+    font-style: normal;
+}
+
 .header-navigation_li > a {
   font-size: 16px;
   text-transform: capitalize;
   font-weight: 500;
+  color: var(--main-font-color);
 }
 
 .header-address_ul {
