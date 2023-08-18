@@ -52,7 +52,7 @@ address {
 
 .icon-logo_text {
   font-family: var(--additional-font);
-  color: var(--accent-color);
+  color: var(--main-font-color);
   font-size: 18px;
   letter-spacing: 0.54px;
   text-transform: uppercase;
@@ -174,7 +174,7 @@ address {
 }
 
 .cover-section_button {
-  color: var(--white-color);
+  color: var(--accent-color);
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
