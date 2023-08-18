@@ -171,14 +171,6 @@ address {
   color: var(--white-color);
 }
 
-.header-address_link link {
-    color: var(--light-font-color);
-}
-
-.header-navigation_a link {
-    color: var(--main-font-color);
-}
-
 .cover-section_button {
   color: var(--white-color);
   font-family: inherit;
@@ -269,4 +261,12 @@ address {
   font-weight: 400;
   letter-spacing: 0.32px;
   margin: 0 auto;
+}
+
+.header-address_link link {
+    color: var(--light-font-color);
+}
+
+.header-navigation_a link {
+    color: var(--main-font-color);
 }
