@@ -262,10 +262,10 @@ address {
   margin: 0 auto;
 }
 
-.header-address_link link {
+.header-address_link a {
     color: var(--light-font-color);
 }
 
-.header-navigation_a link {
+.header-navigation_a a {
     color: var(--main-font-color);
 }
