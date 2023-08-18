@@ -41,7 +41,6 @@ address {
   font-size: 16px;
   text-transform: capitalize;
   font-weight: 500;
-  color: var(--light-font-color);
 }
 
 .header-address_ul {
