@@ -93,7 +93,7 @@ address {
 }
 
 .filter-button {
-  color: var(--main-font-color);
+  color: var(--accent-color);
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
