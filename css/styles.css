@@ -270,7 +270,7 @@ address {
   margin: 0 auto;
 }
 
-.header-address_link a {
+.header-address_link {
     color: var(--light-font-color);
 }
 
