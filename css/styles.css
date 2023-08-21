@@ -28,7 +28,7 @@ body {
     color: #2E2F42;
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.32px;
 }
 
@@ -54,7 +54,7 @@ address {
 .header-address_ul {
   font-size: 16px;
   text-transform: lowercase;
-  font-weight: 400;
+  
 }
 
 .icon-logo_text {
@@ -147,7 +147,6 @@ address {
 .cart-description {
   color: var(--light-font-color);
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -160,7 +159,6 @@ address {
 
 .footer-content_text {
   font-size: 16px;
-  font-weight: 400;
   letter-spacing: 0.02em;
 }
 .start-section {
@@ -171,7 +169,6 @@ address {
 
 .cover-section_h {
   font-size: 56px;
-  font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
   text-align: center;
@@ -212,7 +209,6 @@ address {
 .content-text_p {
   color: var(--light-font-color);
   font-size: 16px;
-  font-weight: 400;
   letter-spacing: 0.02em;
 }
 
@@ -220,7 +216,6 @@ address {
 .content-team_h {
   font-size: 36px;
   color: var(--main-font-color);
-  font-weight: 700;
   text-transform: capitalize;
   line-height: 1.11em;
   text-align: center;
@@ -265,7 +260,6 @@ address {
 .team-persone_position {
   color: var(--light-font-color);
   font-size: 16px;
-  font-weight: 400;
   letter-spacing: 0.32px;
   margin: 0 auto;
 }
